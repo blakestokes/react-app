@@ -1,16 +1,20 @@
-import { ReactNode } from "react";
+import styled from "styled-components";
+
+const StyledButton = styled.button`
+	background-color: #2ea44f;
+	color: white;
+`;
 
 interface Props {
-	children: ReactNode;
-	color: "primary" | "secondary" | "warning" | "danger" | "dark";
+	children: string;
 	onClick: () => void;
 }
 
-const Button = ({ children, onClick, color = "primary" }: Props) => {
+const Button = ({ children, onClick }: Props) => {
 	return (
-		<button type="button" className={"btn btn-" + color} onClick={onClick}>
+		<StyledButton type="button" onClick={onClick}>
 			{children}
-		</button>
+		</StyledButton>
 	);
 };
 
