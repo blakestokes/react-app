@@ -10,6 +10,7 @@ import Navbar from "./components/Navbar";
 import Cart from "./components/Cart";
 import { GiPlayerBase } from "react-icons/gi";
 import ExpandableText from "./components/ExpandableText";
+import Form from "./components/Form";
 
 function App() {
 	let items = [
@@ -103,6 +104,8 @@ function App() {
 				temporibus distinctio reprehenderit itaque inventore dicta quia
 				repellendus laudantium animi! Libero!
 			</ExpandableText>
+
+			<Form></Form>
 		</div>
 	);
 }
