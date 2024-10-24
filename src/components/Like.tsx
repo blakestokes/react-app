@@ -11,8 +11,8 @@ function Like({ onClick }: Props) {
 	const [liked, setLiked] = useState(false);
 
 	const toggleLike = () => {
-		setOutlineColor(outlineColor === "red" ? "black" : "red");
-		setFillColor(fillColor === "red" ? "none" : "red");
+		setOutlineColor(outlineColor === "#ff6b81" ? "black" : "#ff6b81");
+		setFillColor(fillColor === "#ff6b81" ? "none" : "#ff6b81");
 		setLiked(!liked);
 	};
 
