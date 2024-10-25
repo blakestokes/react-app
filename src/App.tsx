@@ -8,8 +8,8 @@ import { useState } from "react";
 import Like from "./components/Like";
 import Navbar from "./components/Navbar";
 import Cart from "./components/Cart";
-import { GiPlayerBase } from "react-icons/gi";
 import ExpandableText from "./components/ExpandableText";
+import ExpenseTracker from "./components/ExpenseTracker/ExpenseTracker";
 import Form from "./components/Form";
 
 function App() {
@@ -106,6 +106,9 @@ function App() {
 			</ExpandableText>
 
 			<Form></Form>
+
+			<br />
+			<ExpenseTracker />
 		</div>
 	);
 }
